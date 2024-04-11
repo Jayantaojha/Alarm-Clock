@@ -7,7 +7,7 @@
 </head>
 <body class="bg-slate-800 text-white flex justify-center items-center">
 
-    <div id="container" class="min-w-[90vw] bg-white text-black mt-[15vh] rounded-md py-3 px-3">
+    <div id="container" class="min-w-[90vw] md:min-w-[40vw] bg-white text-black mt-[15vh] rounded-md py-3 px-3 flex flex-col justify-center items-center">
 
         <!-- image + current time -->
         <div id="display-div">
@@ -22,11 +22,11 @@
         </div>
 
         <!-- for taking inputs -->
-        <div id="input-div" class="mt-6 flex justify-between w-full">
+        <div id="input-div" class="mt-6 flex justify-between w-full md:w-[80%]">
 
             <div id="hours">
                 <select name="hours" id="hours" class="py-2 px-2 rounded border-[1px] border-gray-600">
-                    <option value="">Hours</option>
+                    <option value="" selected>Hours</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -44,7 +44,7 @@
 
             <div id="minutes">
                 <select name="minutes" id="minutes" class="py-2 px-2 rounded border-[1px] border-gray-600">
-                    <option value="">Minutes</option>
+                    <option value="" selected>Minutes</option>
                     <option value="5">5</option>
                     <option value="10">10</option>
                     <option value="15">15</option>
@@ -61,7 +61,7 @@
 
             <div id="am-pm">
                 <select name="time-format" id="time-format" class="py-2 px-2 rounded border-[1px] border-gray-600">
-                    <option value="">AM/PM</option>
+                    <option value="" selected>AM/PM</option>
                     <option value="am">AM</option>
                     <option value="pm">PM</option>
                 </select>
@@ -70,7 +70,7 @@
         </div>
 
         <!-- button to set alarm -->
-        <div id="set-alarm-div" class="mt-8 mb-4">
+        <div id="set-alarm-div" class="mt-8 mb-4 w-full md:w-[80%]">
             <button class="w-full bg-[#4a99f8] text-white text-base py-3 font-semibold rounded border-[1px] border-gray-600 hover:bg-[#335580]">Set Alarm</button>
         </div>
 
